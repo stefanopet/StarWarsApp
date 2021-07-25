@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StarWars</string>
+    <string name="generic_error">Si è verificato un errore nella ricerca. Si prega di riprovare.</string>
+    <string name="error_loading_visibility">You must set view with id => @+id/loading_view in activity layout</string>
+    <string name="close">Chiudi</string>
+    <string name="warning">Attenzione</string>
+    <string name="search_characters">Cerca i tuoi personaggi preferiti</string>
+    <string name="search">Cerca</string>
+    <string name="insert_name">Inserisci nome</string>
+    <string name="search_all">Cerca tutti</string>
+</resources>
