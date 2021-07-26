@@ -10,7 +10,6 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface StarWarsObservableApi {
-    /* TODO */
     String BASE_ENDPOINT = "people";
 
     /**
@@ -28,13 +27,4 @@ public interface StarWarsObservableApi {
     @GET(BASE_ENDPOINT)
     Observable<CharacterResponseModel> getCharactersFromName(
             @Nullable @Query("search") String search);
-
-    /**
-     *
-     * @return character from id
-     */
-    /*
-    @GET(BASE_ENDPOINT + "/{id}")
-    Observable<CharacterResponseModel> getCharacterFromId(
-            @Path("id") int id);*/
 }

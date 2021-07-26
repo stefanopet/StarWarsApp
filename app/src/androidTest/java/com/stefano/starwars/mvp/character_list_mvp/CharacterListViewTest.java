@@ -54,12 +54,12 @@ public class CharacterListViewTest extends TestCase {
 
     @Test
     public void testScenarioSearchForName(){
-        //select search for id
+        //select search for name
         Espresso.onView(withId(R.id.id_rb)).perform((click()));
         //check radiobutton selected
         Espresso.onView(withId(R.id.id_rb)).check(matches(isChecked()));
         Espresso.onView(withId(R.id.search_all_rb)).check(matches(not(isChecked())));
-        //input id beer edit text
+        //input name character edit text
         Espresso.onView(withId(R.id.for_id_et)).perform(typeText(name));
         //close keyboard
         Espresso.closeSoftKeyboard();
@@ -70,7 +70,7 @@ public class CharacterListViewTest extends TestCase {
 
     @Test
     public void testScenarioSearchAllAndScroll(){
-        //select search for id
+        //select search for name
         Espresso.onView(withId(R.id.search_all_rb)).perform((click()));
         //check radiobutton selected
         Espresso.onView(withId(R.id.id_rb)).check(matches(not(isChecked())));

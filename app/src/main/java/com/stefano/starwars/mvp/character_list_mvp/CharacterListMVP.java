@@ -8,7 +8,6 @@ import com.stefano.starwars.net.models.CharacterModel;
 import com.stefano.starwars.net.models.response.CharacterResponseModel;
 
 import java.util.ArrayList;
-import java.util.List;
 
 interface CharacterListMVP {
     interface  View {
