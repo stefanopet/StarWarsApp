@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:gravity="center"
+    android:gravity="left"
     android:id="@+id/itineraries_layout"
     android:background="@color/white"
     android:orientation="horizontal"
@@ -17,36 +17,15 @@
         android:layout_height="@dimen/dimen_64dp"
         android:layout_gravity="center_vertical" />
 
-    <LinearLayout
-        android:id="@+id/text_layout"
-        android:layout_width="@dimen/dimen_280dp"
+    <TextView
+        android:id="@+id/name_tv"
+        android:textStyle="bold"
+        android:paddingBottom="@dimen/padding_4dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginStart="@dimen/margin_28dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/name_tv"
-            android:textStyle="bold"
-            android:paddingBottom="@dimen/padding_4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:paddingStart="@dimen/padding_16dp"
-            android:paddingEnd="@dimen/padding_16dp"
-            android:textColor="@android:color/black"/>
-
-        <TextView
-            android:id="@+id/tagline_tv"
-            android:paddingBottom="@dimen/padding_4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:paddingStart="@dimen/padding_16dp"
-            android:paddingEnd="@dimen/padding_16dp"
-            android:lineSpacingExtra="@dimen/padding_4dp"
-            android:textColor="@android:color/black" />
-
-    </LinearLayout>
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        android:textColor="@android:color/black"/>
 
 </LinearLayout>
